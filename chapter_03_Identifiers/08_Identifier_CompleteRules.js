@@ -78,12 +78,13 @@ let resumeDoc = "document";
 
 console.log("\n--- Rule 6: ASCII equivalents (preferred) ---");
 console.log("cafeShop  :", cafeShop);
-console.log("resumeDoc :", resumeDoc);
+console.log("resumeDocs :", resumeDoc);
 
 
 // ------------------------------------------------------------
 // RULE 7: Naming conventions
-// ------------------------------------------------------------
+// ---------------------------------
+// ---------------------------
 let totalPrice = 150;
 
 function getUserName() {
