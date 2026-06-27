@@ -1,93 +1,102 @@
 # Chapter 01 - Basics
 
-This chapter covers the very basics of JavaScript and how to verify your Node.js setup before diving into Playwright.
+This chapter sets up the foundation — writing your first JavaScript code, using loops and functions, and verifying your Node.js environment.
 
 ---
 
-## What You Will Learn
+## Files Overview
 
-- How to declare variables and print output in JavaScript
-- How to write and call functions
-- How to use loops
-- How to check your Node.js environment is ready
-
----
-
-## Files in This Chapter
-
-| File | What it does |
-|------|-------------|
-| `01_basics.js` | Your first JavaScript program — variables and console output |
-| `02_hotcode.js` | Functions and for loops in JavaScript |
-| `03_verifysetup.js` | Checks your OS, CPU architecture, and Node.js version |
+| File | Topic |
+|------|-------|
+| [01_basics.js](01_basics.js) | Hello World — `console.log()` and basic variable output |
+| [02_hotcode.js](02_hotcode.js) | Loops and functions — `for` loop with function call |
+| [03_verifysetup.js](03_verifysetup.js) | Node.js setup verification — OS, architecture, Node version |
 
 ---
 
-## How to Run Each File
+## Concepts Explained
 
-Open your terminal, navigate to this folder, and run:
+### 1. console.log()
+
+The most basic way to print output in JavaScript.
+
+```js
+console.log("Jai ganeshaya namah");
+
+let x = 10;
+console.log(x);  // 10
+```
+
+---
+
+### 2. Variables
+
+Declare a variable using `let`, `var`, or `const` and assign a value to it.
+
+```js
+let x = 10;
+console.log(x);  // 10
+```
+
+---
+
+### 3. For Loop
+
+Repeats a block of code a fixed number of times.
+
+```js
+for (let i = 0; i < 100; i++) {
+    console.log(x + "hi");  // prints "10hi" 100 times
+    print();
+}
+```
+
+---
+
+### 4. Functions
+
+A reusable block of code. Define it once, call it anywhere.
+
+```js
+function print() {
+    console.log("hello");
+}
+
+print();  // call the function
+```
+
+> Note: In `02_hotcode.js`, the function `print()` is called **before** it is defined in the file — this works because JavaScript hoists function declarations to the top automatically.
+
+---
+
+### 5. Node.js Environment Check
+
+Use the built-in `process` object to read system information.
+
+```js
+console.log(process.platform);                   // win32 / linux / darwin
+console.log(process.arch);                        // x64 / arm64
+console.log("node version =", process.version);  // e.g. v20.11.0
+```
+
+Run `03_verifysetup.js` to confirm your Node.js is installed and working correctly.
+
+---
+
+## Running a File
 
 ```bash
-cd chapter_01_Basics
+node chapter_01_Basics/01_basics.js
+node chapter_01_Basics/02_hotcode.js
+node chapter_01_Basics/03_verifysetup.js
 ```
 
-**Run 01_basics.js**
-```bash
-node 01_basics.js
-```
-Output:
-```
-Jai ganeshaya namah
-10
-```
+## Prerequisites
 
----
+Verify Node.js is installed:
 
-**Run 02_hotcode.js**
-
-> Before running, fix the bug on line 11 — add the `function` keyword:
-> ```js
-> // Change this:
-> print() { ... }
->
-> // To this:
-> function print() { ... }
-> ```
-
-```bash
-node 02_hotcode.js
-```
-
----
-
-**Run 03_verifysetup.js**
-```bash
-node 03_verifysetup.js
-```
-Output will look something like:
-```
-win32
-x64
-node version =  v20.11.0
-```
-This confirms Node.js is installed and working correctly on your machine.
-
----
-
-## Before You Start — Prerequisites
-
-Make sure Node.js is installed on your machine.
-
-**Check if Node.js is installed:**
 ```bash
 node -v
 ```
-If you see a version number (e.g. `v20.11.0`), you are good to go.
 
-If not, download and install Node.js from: https://nodejs.org
-
----
-
-## Quick Tip
-
-If you are new to JavaScript, start with `01_basics.js` and work your way through the files in order. Each file builds on the previous one.
+If you see a version number (e.g. `v20.11.0`), you are good to go. If not, download from [https://nodejs.org](https://nodejs.org).
