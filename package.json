@@ -1,0 +1,24 @@
+{
+  "name": "learnplaywrightbatch3x",
+  "version": "1.0.0",
+  "description": "A structured JavaScript learning course covering core concepts required for Playwright test automation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashokk-17/LEARNPLAYWRIGHTBATCH3X.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ashokk-17/LEARNPLAYWRIGHTBATCH3X/issues"
+  },
+  "homepage": "https://github.com/Ashokk-17/LEARNPLAYWRIGHTBATCH3X#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
