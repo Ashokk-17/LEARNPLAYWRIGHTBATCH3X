@@ -18,10 +18,11 @@ This chapter covers JavaScript arrays — creation, access, mutation, searching,
 | [88_searching.js](88_searching.js) | Searching arrays (`indexOf`, `includes`, `find`) |
 | [89_iterate.js](89_iterate.js) | Iterating arrays (`for...of`, `forEach`) |
 | [90_transform_array.js](90_transform_array.js) | Transforming arrays (`map`, `filter`, `reduce`) |
-| [91_arrays2.js](91_arrays2.js) | Additional array practice |
-| [92_arrays_slicing.js](92_arrays_slicing.js) | `slice` and `splice` |
-| [93_concat_array.js](93_concat_array.js) | Combining arrays with `concat` and the spread operator |
-| [94_arrays_checking.js](94_arrays_checking.js) | Checking array types (`Array.isArray`, etc.) |
+| [91_arrays_Sorting.js](91_arrays_Sorting.js) | Sorting arrays with `sort` (default vs. compare function) |
+| [92_arrays_slicing_splicing.js](92_arrays_slicing_splicing.js) | `slice` and `splice` |
+| [93_concat_array.js](93_concat_array.js) | Combining arrays with `concat`, the spread operator, and `join` |
+| [94_arrays_checking_every_some.js](94_arrays_checking_every_some.js) | Checking array types (`Array.isArray`) and testing elements with `every`/`some` |
+| [95_arrays_add2.js](95_arrays_add2.js) | More `push`/`splice` practice — adding, removing, and replacing elements |
 
 ---
 
