@@ -15,3 +15,4 @@ const calculator = {
 
 
 calculator.add(10);
+console.log(calculator.value); // 10
