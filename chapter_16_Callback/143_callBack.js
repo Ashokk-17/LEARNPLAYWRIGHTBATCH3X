@@ -1,22 +1,21 @@
-function print(){
-    console.log("Hello world");
-
+function print() {
+    console.log("Normal Function is called");
 }
 
-
-function Place_Order(menu, callback){
-    console.log("Hi your order is placed for " + menu);
-    callback();
-
+function placeOrder(ClipboardItem, pramodCallback) {
+    console.log("Hi, You order is placed");
+    pramodCallback();
 }
 
+// First Way
+placeOrder("Pizza", print);
 
-Place_Order("Pizza", print);
-
-Place_Order("Burger", function () {
+// Sencond Way Anoy
+placeOrder("Burger", function () {
     console.log("Anoy Fn, I am also a function wihtout name!")
 });
+
 // Third Way - Arrow Fn
-Place_Order("Momos", () => {
+placeOrder("Momos", () => {
     console.log("Arrow Fn, I am also a function wihtout name!")
 });
