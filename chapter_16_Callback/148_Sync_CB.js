@@ -1,6 +1,8 @@
-let testResults = ["Pass", "Fail", "Pass", "Skip"]; // array of strings to iterate over
+let testResults = ["Pass", "Fail", "Pass", "Skip"]; // array of strings to iterate 
+// over
 
-// forEach runs its callback once per array element - here it's called synchronously, in order, before moving to the next line
+// forEach runs its callback once per array element - here it's called synchronously,
+//  in order, before moving to the next line
 testResults.forEach(function (result, index) { // result = the current element, index = its position (0, 1, 2...)
     console.log("Test " + index + "=> " + result);
 })
